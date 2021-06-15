@@ -16,6 +16,7 @@
 		1E77CD4C26707D7E00478D1E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E77CD4B26707D7E00478D1E /* ContentView.swift */; };
 		1E77CD4E26707D8000478D1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E77CD4D26707D8000478D1E /* Assets.xcassets */; };
 		1E77CD5126707D8000478D1E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E77CD5026707D8000478D1E /* Preview Assets.xcassets */; };
+		1EF0ACAE267885C60047719E /* MissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF0ACAD267885C60047719E /* MissionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		1E77CD4D26707D8000478D1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E77CD5026707D8000478D1E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1E77CD5226707D8000478D1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EF0ACAD267885C60047719E /* MissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionView.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		1E77CD4826707D7E00478D1E /* Moonshot */ = {
 			isa = PBXGroup;
 			children = (
+				1EF0ACAD267885C60047719E /* MissionView.swift */,
 				1E655EBF26733D2A0028F709 /* astronauts.json */,
 				1E655EC026733D2A0028F709 /* missions.json */,
 				1E77CD4926707D7E00478D1E /* MoonshotApp.swift */,
@@ -160,6 +163,7 @@
 				1E77CD4A26707D7E00478D1E /* MoonshotApp.swift in Sources */,
 				1E655EC82673406A0028F709 /* Mission.swift in Sources */,
 				1E655EC626733E310028F709 /* Bundle-Decodable.swift in Sources */,
+				1EF0ACAE267885C60047719E /* MissionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
