@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var showingDates = true
+    
     let astronauts: [Astronaut] = Bundle.main.decode("astronauts.json")
     let missions: [Mission] = Bundle.main.decode("missions.json")
     
@@ -24,11 +26,24 @@ struct ContentView: View {
                         VStack(alignment: .leading) {
                             Text(mission.displayName)
                                 .font(.headline)
-                            Text(mission.formattedLaunchDate)
+                            if showingDates {
+                                Text(mission.formattedLaunchDate)
+                            } else {
+                                VStack(alignment: .leading) {
+                                    ForEach(mission.crew, id: \.name) { member in
+                                        Text(member.name.capitalized)
+                                    }
+                                }
+                            }
                         }
                     }
             }
             .navigationBarTitle("Moonshot")
+            .navigationBarItems(trailing: Toggle(isOn: $showingDates) {
+                
+                Text("Show launch dates")
+                
+            })
         }
     }
 }
